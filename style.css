@@ -19,6 +19,7 @@ body::before {
 	background-image: url('background2.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: 50% !important;
 	filter: opacity(5%) saturate(50%);
 	z-index: -1; 
 }
@@ -142,5 +143,6 @@ li {
 	margin: 2px;
 	height: 40px;
 }
+
 
 
