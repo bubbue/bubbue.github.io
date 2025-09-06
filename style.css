@@ -24,6 +24,14 @@ body::before {
 	z-index: -1; 
 }
 
+.title {
+  position: sticky;
+  margin: 20px;
+  text-align: center;
+  font-size: 2em;
+  z-index: 10;
+}
+
 ul li:first-child {
     align-self: flex-start;
 }
@@ -143,6 +151,7 @@ li {
 	margin: 2px;
 	height: 40px;
 }
+
 
 
 
