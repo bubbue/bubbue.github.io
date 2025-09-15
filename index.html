@@ -1,32 +1,71 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Dreamnuker</title>
-	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
-	<link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+    <title>dreamnuker</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-	<ul>
-		<h1 class="title">Dreamnuker</h1>
-		<li class="link" id="kopiuj">
-			<img src="discord.png" class="img"></img><br><a class="discord bigger">Discord</a><br><a class="smaller" id="username">@dreamnuker</a>
-		</li>
-		<li class="link" onclick="window.location.href='https://steamcommunity.com/id/dreamnuker/';">
-			<img src="steam.png" class="img"></img><br><a class="steam bigger" href="https://steamcommunity.com/id/dreamnuker/" >Steam</a><br><a class="smaller" href="https://steamcommunity.com/id/dreamnuker/">Dreamnuker</a>
-		</li><li class="link" onclick="window.location.href='https://www.xbox.com/pl-PL/play/user/loggen249t';">
-			<img src="xbox.png" class="img"></img><br><a class="bigger" href="https://www.xbox.com/pl-PL/play/user/loggen249t">Xbox</a><br><a class="smaller" href="https://www.xbox.com/pl-PL/play/user/loggen249t">loggen249t</a>
-		</li>
-		<li class="link" onclick="window.location.href='https://x.com/dreamnuker0';">
-			<img src="twitter.png" class="img"></img><br><a class="twitter bigger" href="https://x.com/dreamnuker0" >Twitter</a><br><a class="smaller" href="https://x.com/dreamnuker0">@dreamnuker0</a>
-		</li>
-		<li class="image">
-			<img src="kagura-azumanga-kagura.gif" class="gif"></img>
-		</li>
-	</ul>
-	<script src="script.js"></script>
+  <body id="body">
+    <audio id="holdAudio" preload="auto"><source src="mousehold.mp3" type="audio/mp3"></source></audio>
+    <audio id="clickAudio" preload="auto"><source src="mouseclick.mp3" type="audio/mp3"></source></source></audio>
+    <header>
+      <marquee behavior="scroll" direction="right" scrollamount="8" id="welcome">kagura my beloved</marquee>
+    </header>
+    <main>
+      <div class="main-frame ">
+        <div id="logo-container">
+          <img id="wordart" src="wordart.png"></img>
+        </div>
+        <img id="kagura"></img>
+        <div class="borderous"></div>
+        <div id="about-me">
+          <p class="subtitle">abt me</p>
+          <p class="abtmedesc default">hi, i'm dreamnuker. i'm from a small town in silesia. <br>there's not much i can say about me. i really enjoy programming, climbing mountains (not the extreme ones), playing games (video and classic ones) obviously and collecting stuff, especially pokémon cards. <br>i like azumanga daioh, too.</p>
+        </div>
+        <div id="links">
+          <p class="subtitle">links</p>
+          <div id="buttons">
+            <button id="twitter-btn">twitter</button>
+            <button id="discord-btn">discord</button>
+            <button id="steam-btn">steam</button>
+            <button id="xbox-btn">xbox</button>
+          </div>
+        </div>
+        <div id="projects">
+        <p class="subtitle">my silly projects</p>
+          <details id="sum">
+            <summary>click to see projects...</summary>
+            <ul id="classment">
+              <li><a href="https://dreamnuker-code.github.io/search/">/search</a></li>
+            </ul>
+          </details>
+        </div>
+        <div id="loader">
+          <div id="allin">
+            <p class="subtitle"></p>
+            <div id="stamps">
+              <img src="8831imgs/kagura_stamp_by_natefox_d1ft2fv-fullview.jpg"></img>
+            </div>
+            <div id="imgs">
+              <img class="loading" src="windows-progress-bar.gif"></img>
+              <img src="BonkuraDance3.gif"></img>
+            </div>
+            <div id="buttons-gifs">
+              <img id="firefox" src="8831imgs/firefox.gif"></img>
+              <img src="8831imgs/azumanga.jpg"></img>
+              <img src="8831imgs/vocaloid.gif"></img>
+              <img src="8831imgs/best800x600.gif"></img>
+            </div>
+            <a id="date">Today is 9.09.9999</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+    <script src="buttons.js"></script>
+    <script src="imageDVD.js"></script>
+    <script src="date.js"></script>
   </body>
 </html>
-
-
-

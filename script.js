@@ -1,14 +1,24 @@
-document.getElementById("kopiuj").addEventListener("click", function() {
-	let buttone = document.getElementById("kopiuj");
-    let pole = document.getElementById("username"); 
-    let tekst = pole.innerText;
+const marquee = document.getElementById("welcome");
+const body = document.getElementById("body");
+const mcaudio = document.getElementById("clickAudio");
+const mhaudio = document.getElementById("holdAudio");
+const marqueeTable = ["kagura, my beloved", "hello", "hello, world", "pokemon", "rise and shine, mr. freeman", "OH MY GAH!!!", "Hello Everynyan"]
+let randomMarquee = Math.floor(Math.random() * marqueeTable.length);
 
-    navigator.clipboard.writeText(tekst) 
-        .then(() => {
-            buttone.classList.add("copied"); 
+console.log(marqueeTable[randomMarquee])
 
-            setTimeout(() => { 
-                buttone.classList.remove("copied"); 
-            }, 200);
-    })
+marquee.textContent = marqueeTable[randomMarquee]
+
+body.addEventListener("contextmenu", function(event){
+    event.preventDefault();
+    return false;
 });
+
+/* body.addEventListener("mousehold", function(){
+    mhaudio.play()
+});
+
+body.addEventListener("mouseup", function(){
+    mcaudio.currentTime = 0;
+    mcaudio.play()
+}); */
